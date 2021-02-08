@@ -1,0 +1,59 @@
+:root {
+  --colorAction: #D977A5;
+  --colorBg: #FAFAFA;
+}
+
+.Widget {
+  padding: 1rem;
+  width: calc(550px - 2rem);
+  min-height: calc(650px - 2rem);
+  margin: 2rem auto 0;
+
+  background-color: var(--colorBg);
+}
+
+.Header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header h1 {
+  font-size: 1.6rem;
+  color: var(--colorAction);
+  padding-bottom: 5px;
+  border-bottom: 5px solid var(--colorAction);
+}
+
+.Header select {
+  padding: 0.3rem;
+  background-color: var(--colorBg);
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.Footer {
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.Footer button {
+  background-color: var(--colorBg);
+  color: var(--colorAction);
+  border: 3px solid var(--colorAction);
+  font-size: 1.2rem;
+  padding: 0.3em 0.4em;
+
+  outline: none;
+  cursor: pointer;
+
+  transition: color, background-color 0.3s ease-in-out;
+}
+
+.Footer button:hover {
+  background-color: var(--colorAction);
+  color: white;
+}
