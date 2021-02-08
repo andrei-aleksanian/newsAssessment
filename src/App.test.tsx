@@ -2,8 +2,54 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+describe('News Widget', () => {
+
+  beforeEach(() => {
+    render(<App />);
+  })
+  
+  test('Widget is rendered', () => {
+    const widget = screen.getByRole("newsWidget");
+    expect(widget).toBeInTheDocument();
+  });
+
+  describe('Header', () => { 
+    test('Header is rendered', () => {
+      const header = screen.getByRole("header");
+      expect(header).toBeInTheDocument();
+    });
+    
+    test('Header has a heading', () => {
+      const heading = screen.getByRole("h1");
+      expect(heading).toBeInTheDocument();
+    });
+    
+    test('Header has a select input', () => {
+      const heading = screen.getByRole("select");
+      expect(heading).toBeInTheDocument();
+    });
+  })
+
+  describe('News Space', () => { 
+    test('News space is rendered', () => {
+      const newsSpace = screen.getByRole("newsSpace");
+      expect(newsSpace).toBeInTheDocument();
+    });
+
+    // Add news elements test for later
+  })
+
+  describe('Footer', () => { 
+    test('Footer is rendered', () => {
+      const footer = screen.getByRole("footer");
+      expect(footer).toBeInTheDocument();
+    });
+
+    test('Footer has a button', () => {
+      const button = screen.getByRole("showMore");
+      expect(button).toBeInTheDocument();
+      expect(button).toHaveAttribute('type', 'button');
+    });
+  })
+})
+
