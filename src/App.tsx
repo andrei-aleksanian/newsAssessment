@@ -1,7 +1,24 @@
 import React from 'react';
 
 import classes from './App.module.css'
-import News from './components/News';
+import News, {ArticleProps} from './components/News';
+
+// Testing purposes
+const mockArticles = [
+  {
+      source: {
+          id: "",
+          name: "name"
+      },
+      author: "",
+      title: "mockArticle",
+      description: "foo",
+      url: "/",
+      urlToImage: "/",
+      publishedAt: "2021-01-14T00:57:27Z",
+      content: ""
+  }
+] as ArticleProps[] 
 
 const App = () => {
   const Header = () => (
@@ -22,7 +39,7 @@ const App = () => {
   return (
     <div role="newsWidget" className={classes.Widget}>
       <Header />
-      <News />
+      <News articles={mockArticles}/>
       <Footer />
     </div>
   );
