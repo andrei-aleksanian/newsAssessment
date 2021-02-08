@@ -11,7 +11,7 @@ export interface NewsProps {
 const News = ({articles}: NewsProps) => {
     return (
         <div role="newsSpace" className={classes.News}>
-
+            {articles.map(a => <Article key={a.url} {...a}/>)}
         </div>
     )
 }

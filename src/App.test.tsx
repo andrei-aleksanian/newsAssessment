@@ -7,7 +7,7 @@ describe('News Widget', () => {
   beforeEach(() => {
     render(<App />);
   })
-  
+
   test('Widget is rendered', () => {
     const widget = screen.getByRole("newsWidget");
     expect(widget).toBeInTheDocument();
@@ -51,5 +51,19 @@ describe('News Widget', () => {
       expect(button).toHaveAttribute('type', 'button');
     });
   })
+
+  describe('getArticles', () => { 
+    test('getArticles recieves articles', async () => {
+      const articles = await App.getArticles();
+      expect(articles.length).not.toEqual(null);
+    });
+
+    // test('getArticles returns type Article', async () => {
+    //   const articles = await App.getArticles();
+    //   expect(articles.length).not.toEqual(null);
+    // });
+  })
+
+
 })
 

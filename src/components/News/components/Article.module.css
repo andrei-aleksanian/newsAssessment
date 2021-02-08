@@ -1,0 +1,26 @@
+.Article {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed grey;
+}
+
+.Article a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Article a h4 {
+    margin-bottom: 0.5rem;
+}
+
+.Article div span {
+    font-size: 0.8rem;
+}
+
+.Article div .Source {
+    margin-left: 1rem;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 0.1em 0.8em;
+    color: white;
+}

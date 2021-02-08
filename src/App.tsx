@@ -18,10 +18,66 @@ const mockArticles = [
       urlToImage: "/",
       publishedAt: "2021-01-14T00:57:27Z",
       content: ""
-  }
+  },
+  {
+    source: {
+        id: "",
+        name: "name"
+    },
+    author: "",
+    title: "mockArticle",
+    description: "foo",
+    url: "/",
+    urlToImage: "/",
+    publishedAt: "2021-01-14T00:57:27Z",
+    content: ""
+},
+{
+  source: {
+      id: "",
+      name: "name"
+  },
+  author: "",
+  title: "mockArticle",
+  description: "foo",
+  url: "/",
+  urlToImage: "/",
+  publishedAt: "2021-01-14T00:57:27Z",
+  content: ""
+},
+{
+  source: {
+      id: "",
+      name: "name"
+  },
+  author: "",
+  title: "mockArticle",
+  description: "foo",
+  url: "/",
+  urlToImage: "/",
+  publishedAt: "2021-01-14T00:57:27Z",
+  content: ""
+},
+{
+  source: {
+      id: "",
+      name: "name"
+  },
+  author: "",
+  title: "mockArticle",
+  description: "foo",
+  url: "/",
+  urlToImage: "/",
+  publishedAt: "2021-01-14T00:57:27Z",
+  content: ""
+}
 ] as ArticleProps[] 
 
 const App = () => {
+  const getArticles = (page: number) => {
+    
+  }
+
   const Header = () => (
     <div role="header" className={classes.Header}>
       <h1 role="h1">News</h1>
