@@ -56,8 +56,8 @@ describe('News Widget', () => {
 
   describe('getArticles', () => { 
     test('getArticles recieves articles', async () => {
-      const articles = await getArticles();
-      expect(articles.length).not.toEqual(null);
+      const articles = await getArticles(1);
+      expect(articles.length).toEqual(5);
     });
 
     // test('getArticles returns type Article', async () => {
