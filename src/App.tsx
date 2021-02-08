@@ -73,10 +73,11 @@ const mockArticles = [
 }
 ] as ArticleProps[] 
 
+export const getArticles = (page: number) => {
+    return []
+}
+
 const App = () => {
-  const getArticles = (page: number) => {
-    
-  }
 
   const Header = () => (
     <div role="header" className={classes.Header}>

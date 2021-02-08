@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import App, {getArticles} from './App';
 
 describe('News Widget', () => {
 
@@ -56,7 +56,7 @@ describe('News Widget', () => {
 
   describe('getArticles', () => { 
     test('getArticles recieves articles', async () => {
-      const articles = await App.getArticles();
+      const articles = await getArticles();
       expect(articles.length).not.toEqual(null);
     });
 
