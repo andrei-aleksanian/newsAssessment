@@ -13,6 +13,8 @@ describe('News Widget', () => {
     expect(widget).toBeInTheDocument();
   });
 
+  // Would be nice to test useEffect here
+
   describe('Header', () => { 
     test('Header is rendered', () => {
       const header = screen.getByRole("header");
