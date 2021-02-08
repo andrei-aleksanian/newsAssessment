@@ -1,7 +1,8 @@
 import React from 'react';
 
 import classes from './App.module.css'
-import News, {ArticleProps} from './components/News';
+import News from './components/News';
+import {ArticleProps} from './components/News/components/Article'
 
 // Testing purposes
 const mockArticles = [
